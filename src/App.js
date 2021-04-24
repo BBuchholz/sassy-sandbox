@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+//import 'bootstrap/dist/css/bootstrap.css';
+import './custom.scss';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        React Header
       </header>
+      <div class="container">
+        {/* Row with two equal columns */}
+        <div class="row">
+            <div class="col-md-6">Column left</div>
+            <div class="col-md-6">Column right</div>
+        </div>
+        
+        {/* Row with two columns divided in 1:2 ratio */}
+        <div class="row">
+            <div class="col-md-4">Column left</div>
+            <div class="col-md-8">Column right</div>
+        </div>
+        
+        {/* Row with two columns divided in 1:3 ratio */}
+        <div class="row">
+            <div class="col-md-3">Column left</div>
+            <div class="col-md-9">Column right</div>
+        </div>
+    </div>
     </div>
   );
 }
