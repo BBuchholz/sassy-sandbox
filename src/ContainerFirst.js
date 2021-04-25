@@ -1,9 +1,9 @@
 import React from 'react';
 
-class ContainerFirst extends React.Component {
-    render(){
+function ContainerFirst() {
+    
         return (
-            <div class="container">
+            <div>
                 {/* Row with two equal columns */}
                 <div class="row">
                     <div class="col-md-6">Column left</div>
@@ -23,7 +23,7 @@ class ContainerFirst extends React.Component {
                 </div>
             </div>
         );        
-    }
+    
 }
 
 export default ContainerFirst;

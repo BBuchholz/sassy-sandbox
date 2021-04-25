@@ -1,7 +1,7 @@
 //import './App.css';
 //import 'bootstrap/dist/css/bootstrap.css';
 import './custom.scss';
-import ContainerFirst from './ContainerFirst';
+//import ContainerFirst from './ContainerFirst';
 import NavBarMain from './NavBarMain';
 import HomeScreen from './HomeScreen';
 
@@ -16,6 +16,7 @@ import {
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
+import LessonContainerGridSystem from './LessonContainerGridSystem';
 
 function App() {
   return (
@@ -27,8 +28,8 @@ function App() {
                         <NavBarMain />
                         <h2>
                             <Switch>
-                                <Route path="/container-first">
-                                    <ContainerFirst />
+                                <Route path="/lesson-grid-system">
+                                    <LessonContainerGridSystem />
                                 </Route>
                                 <Route path="/">
                                     <HomeScreen />

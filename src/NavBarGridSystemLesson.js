@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import { LinkContainer } from 'react-router-bootstrap';
 
-class NavBarMain extends React.Component {
+class NavBarGridSystemLesson extends React.Component {
     
     render() {
         return(
@@ -11,11 +11,11 @@ class NavBarMain extends React.Component {
             <div>
                 <h2>
                     <ButtonToolbar className="custom-btn-toolbar">
-                        <LinkContainer to="/lesson-grid-system">
-                            <Button>[GridSystem]</Button>
+                        <LinkContainer to="/lesson-grid-system/container-first">
+                            <Button>[ContainerFirst]</Button>
                         </LinkContainer>
-                        <LinkContainer to="/">
-                            <Button>[Home]</Button>
+                        <LinkContainer to="/lesson-grid-system/container-second">
+                            <Button>[ContainerSecond]</Button>
                         </LinkContainer>
                     </ButtonToolbar>
                 </h2>
@@ -24,4 +24,4 @@ class NavBarMain extends React.Component {
     }
 }
 
-export default NavBarMain;
+export default NavBarGridSystemLesson;
