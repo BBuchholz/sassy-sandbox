@@ -11,11 +11,11 @@ class NavBarGridSystemLesson extends React.Component {
             <div>
                 <h2>
                     <ButtonToolbar className="custom-btn-toolbar">
-                        <LinkContainer to="/lesson-grid-system/container-first">
-                            <Button>[ContainerFirst]</Button>
+                        <LinkContainer to="/lesson-grid-system/two-column-layouts">
+                            <Button>[TwoColumn]</Button>
                         </LinkContainer>
-                        <LinkContainer to="/lesson-grid-system/container-second">
-                            <Button>[ContainerSecond]</Button>
+                        <LinkContainer to="/lesson-grid-system/three-column-layouts">
+                            <Button>[ThreeColumn]</Button>
                         </LinkContainer>
                     </ButtonToolbar>
                 </h2>

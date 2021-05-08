@@ -7,7 +7,7 @@ import HomeScreen from './HomeScreen';
 
 import React from 'react';
 import {
-  MemoryRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";

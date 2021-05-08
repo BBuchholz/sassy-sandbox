@@ -5,7 +5,7 @@ import {
   useRouteMatch,
 } from "react-router-dom";
 
-import ContainerFirst from './ContainerFirst';
+import TwoColumnLayouts from './TwoColumnLayouts';
 import NavBarGridSystemLesson from './NavBarGridSystemLesson';
 
 function LessonContainerGridSystem() {
@@ -13,21 +13,21 @@ function LessonContainerGridSystem() {
     let match = useRouteMatch();
 
     return (
-        <div class="container">
-            <h1>Grid System Lesson</h1>
-            <h3>
-                <a 
+        <div class="container-fluid">
+            <h1>Grid System Lesson <a 
                     href='https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-grid-system.php'
-                >[working from here]</a></h3>
-            <NavBarGridSystemLesson />
+                >[here]</a>
+            </h1>
+            
             <h5>
-                Current match.path value (for debugging): {`${match.path}`}
+                match.path value: {`${match.path}`}
             </h5>
+            <NavBarGridSystemLesson />
             <Switch>
-                <Route path={`${match.path}/container-first`}>
-                    <ContainerFirst />
+                <Route path={`${match.path}/two-column-layouts`}>
+                    <TwoColumnLayouts />
                 </Route>
-                <Route path={`${match.path}/container-second`}>
+                <Route path={`${match.path}/three-column-layouts`}>
                     <h1>Not yet implemented</h1>
                 </Route>
             </Switch>
@@ -35,5 +35,7 @@ function LessonContainerGridSystem() {
     );        
 
 }
+
+
 
 export default LessonContainerGridSystem;
